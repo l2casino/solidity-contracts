@@ -6,6 +6,7 @@
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts-upgradeable": "^4.1.0",
     "@openzeppelin/hardhat-upgrades": "^1.8.2",
     "@tenderly/hardhat-tenderly": "^1.0.12",
     "chai": "^4.3.4",
@@ -19,7 +20,10 @@
   },
   "scripts": {
     "test": "hardhat test",
-    "create": "hardhat run scripts/deploy.js",
+    "deploy": "hardhat run scripts/deploy.js",
     "update": "hardhat run scripts/update.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
   }
 }
